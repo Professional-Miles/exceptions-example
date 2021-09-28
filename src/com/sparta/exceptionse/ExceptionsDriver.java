@@ -27,6 +27,8 @@ public class ExceptionsDriver {
             //never leave catch block empty
             //never print to system.out
             e.printStackTrace();
+        } finally {
+            System.out.println("This got executed");
         }
 
     }
