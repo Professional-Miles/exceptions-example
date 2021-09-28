@@ -10,13 +10,16 @@ public class ExceptionsDriver {
         int a = 10;
         int b = 0;
         System.err.println("Hello");
-        int c = 0; //a/b;
-        System.out.println(c);
+
         DateFormat df = DateFormat.getDateInstance();
         try {
+            int c = a/b;
+            System.out.println(c);
             System.out.println(df.parse("2021-09-28"));
         } catch(ParseException pe){
             System.err.println(pe.getMessage());
+        } catch (ArithmeticException ae){
+            System.err.println("Arithmetic Exception");
         }
     }
 
