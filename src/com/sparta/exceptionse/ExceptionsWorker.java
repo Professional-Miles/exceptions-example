@@ -15,6 +15,13 @@ public class ExceptionsWorker {
         int c = a/b;
         System.out.println(c);
 
+        try {
+
+            new ArithmeticException("Hello from my method!");
+
+        } finally {
+            System.out.println("This got executed");
+        }
     }
 
 }
